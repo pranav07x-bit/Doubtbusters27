@@ -1,0 +1,175 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doubt Buster</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0b0f14, #1c1f2a);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 360px;
+    background: rgba(30, 25, 15, 0.95);
+    border-radius: 20px;
+    padding: 25px 20px 40px;
+    box-shadow: 0 0 30px rgba(139, 69, 19, 0.6);
+    animation: fadeInContainer 1.5s ease forwards;
+  }
+
+  @keyframes fadeInContainer {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #D2A679;
+    margin-bottom: 15px;
+    animation: goldenGlow 2s ease forwards;
+  }
+
+  @keyframes goldenGlow {
+    0% { color: #654321; text-shadow: 0 0 0 #654321; }
+    50% { color: #D2A679; text-shadow: 0 0 15px #D2A679; }
+    100% { color: #D2A679; text-shadow: 0 0 0 #D2A679; }
+  }
+
+  /* Logo with attached glowing golden-brown ring */
+  .logo-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    animation: 5s linear infinite;
+  }
+
+  .logo-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .logo-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    border: 4px solid #D2A679;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Glow animation */
+    box-shadow: 0 0 5px #D2A679;
+    animation: glowRing 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes rotateRing {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes glowRing {
+    0% { box-shadow: 0 0 5px #D2A679; border-color: #D2A679; }
+    50% { box-shadow: 0 0 20px #D2A679; border-color: #D2A679; }
+    100% { box-shadow: 0 0 5px #D2A679; border-color: #D2A679; }
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    background: rgba(139, 69, 19, 0.1);
+    border-left: 4px solid #D2A679;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  ul li:hover {
+    transform: translateX(5px);
+    background: rgba(139, 69, 19, 0.2);
+  }
+
+  ul li span { margin-right: 8px; font-size: 1.1rem; }
+
+  .join-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #D2A679, #8B4513);
+    color: #0b0f14;
+    font-weight: 600;
+    padding: 12px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .join-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #D2A679;
+  }
+
+  @media(max-width: 400px) {
+    h1 { font-size: 1.5rem; }
+    p { font-size: 0.9rem; }
+    ul li { font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to Doubt Buster</h1>
+  <div class="logo-wrapper">
+    <img src="https://cdn5.telesco.pe/file/d780phxrWwVqI7kFtcm2NO84UiwYh--_wLde00Lhd3YmT_8etgdDOykePRtxIh_9DTJ5OvlQ_Mt8tQhHGwc61KDmPRtwB3FmT4bJHN9A0i3VG--RtSpJsqg0gpXK4kqC0lo850MIryhhYJdLKq4XrUteLArgJbAg56IIdpeRmID6TMlFCbag_GYnUJVALlAWcLkaZs1UOKukI4jeOGCkzMEh70T2nTNzrf8SgRDql_j0vVmgfVAUOqLyvBFRV-JWgjhuuazktsUkfQ42HFt7u9-X7En4MF3l5V19P7z3fwxov1_cfS2XVmS6Hqs0lz1IJkwirZPZltHcjoq2xuH5tw.jpg" alt="Doubt Buster Logo">
+  </div>
+  <p>Join our golden community of JEE & NEET aspirants. Clear doubts, stay consistent, and achieve your dreams!</p>
+  <ul>
+    <li><span>📚</span>Separate doubt sections per subject</li>
+    <li><span>🧑‍⚕️</span>Mentorship from GMC 2nd-year MBBS students</li>
+    <li><span>📂</span>Complete JEE & NEET materials</li>
+    <li><span>🎯</span>Daily Target Section</li>
+    <li><span>🔗</span>YPT Link Support</li>
+    <li><span>📝</span>Daily Live Quizzes</li>
+    <li><span>🤝</span>Friendly motivating community</li>
+  </ul>
+  <a href="https://t.me/neet_027/join1" class="join-button" target="_blank">Join Our Main Group</a>
+</div>
+</body>
+</html>
